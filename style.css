@@ -1,12 +1,18 @@
+/* 
+-1er chose: importer la font;
+-2eme: faire la petite étoile *: dedans mettre la font-family, la margin et padding 0, box-sizing: border-box.
+-3: faire des réglage généraux avant d'arriver au body
+-4:
+*/
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: none;
+    padding: 5px;
+    box-sizing: border-box;
     overflow: hidden;
     list-style-type: none;
 }
 body{
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(72,72,72);
     color: whitesmoke;
 }
@@ -15,31 +21,31 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
-    height: 45px;
+    /* border: 1px solid red; */
 }
 h2{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     font-size: 2rem;
 }
 .nav{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: 50%;
 }
 .nav ul{
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem;
+    width: 100%;
 }
 /* SECTION PRINCIPALE */
 .section_principal{
-    border: 1px solid red;
-    height: 70vh;
+    height: 65vh;
     display: flex;
     margin-bottom: 10px;
 }
 .section_left{
-    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
     width: 50%;
 }
 .section_left_container{
@@ -47,37 +53,28 @@ h2{
     flex-direction: column;
 }
 h1{
-    border: 1px solid red;
-    width: 500px;
-    margin: 50px 0 20px;
     font-size: 7rem;
     padding: 1px;
 }
-.h3_blue{
-    color: blue;
+h3{
+    color: rgba(78, 78, 245, 0.835);
     font-size: 1.9rem;
-    margin-bottom: 20px;
-}
-.section_right{
-    display: flex;
-    justify-content: left;
-    align-items: center;
 }
 .section_right img{
+    width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 /* FOOTER */
 footer{
     display: flex;
-    justify-content: space-around;
-    border: 1px solid red;
+    justify-content: space-between;
     background: #000;
-    height: 20vh;
+    height: 25vh;
+    border-radius: 10px;
 }
 .footer_left{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
+    width: 33%;
     margin: 10px;
 }
 h4{
@@ -86,26 +83,31 @@ h4{
 .btn_container li{
     margin: 12px 0;
     border: none;
-    background: blue;
+    background: rgba(78, 78, 245, 0.835);
     padding: 5px;
     text-align: center;
-    width: 150px;
+    width: 200px;
     border-radius: 10px;
     font-size: 1.2rem;
 }
 .footer_right{
     margin: 10px;
-    position: relative;
-    border: 1px solid red;
-    width: 50%;
-
+    width: 67%;
 }
 .img_container{
-    border: 1px solid red;
     display: flex;
-    justify-content: space-around;
-    height: 100px;
-    position: absolute;
-    top: 60px;
-    left: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
 }
+.images{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    width: 700px;
+    height: 80px;
+}
+
+/* **********************MEDIA QUERIES********************* */
