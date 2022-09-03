@@ -56,9 +56,8 @@ h3{
     font-size: 1.9rem;
 }
 .section_right img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 570px;
+    object-fit: contain;
 }
 /* FOOTER */
 footer{
@@ -130,7 +129,7 @@ h4{
         flex-direction: column-reverse;
     }
     .section_right img{
-        height: 470px;
+        height: 450px;
     }
     footer{
         height: 30vh;
@@ -161,7 +160,105 @@ h4{
     }
 }
 
-/* revoir le footer pour le desktop et faire le responsive mobile, taille 1066px ok!! après ça déconne */
+/* MOBILE L */
+@media(max-width:1050px){
+    *{
+        overflow: visible;
+    }
+    header {
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav {
+        width: 70%;
+    }
+    .nav ul {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .section_principal{
+        width: auto;
+        height: 100%;
+        flex-direction: column;
+    }
+    .section_left {
+        width: 100%;
+    }
+    h1 {
+        font-size: 3rem;
+        width: 100%;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    .section_right img {
+        height: 375px;
+    }
+    footer {
+        height: 60vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer_left {
+        margin: 0px;
+    }
+    .images {
+        margin: auto;
+        padding: 8px;
+        height: 73px;
+    }
+}
+/* MOBILE M */
+@media(max-width:375px){
+    .section_right img {
+        height: 310px;
+    }
+    .images {
+        padding: 0px;
+        height: 54px;
+    }
+}
+/* MOBILE S */
+@media(max-width:320px){
+    body{
+        width: 100%;
+        margin: auto;
+    }
+    header {
+        justify-content: flex-start;
+    }
+    .section_principal {
+        margin-bottom: 15px;
+    }
+    h1 {
+        font-size: 2.4rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .section_right img {
+        height: 300px;
+    }
+    footer {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+    .images {
+        padding: 0px;
+        height: 45px;
+    }
+}
 
     
 
